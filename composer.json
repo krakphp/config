@@ -1,0 +1,28 @@
+{
+    "name": "krak/config",
+    "description": "Lightweight Config Registry",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "RJ Garcia",
+            "email": "rj@bighead.net"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "krak/cargo": "^0.2.4",
+        "peridot-php/peridot": "^1.19",
+        "pimple/pimple": "^3.0",
+        "symfony/yaml": "^3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Krak\\Config\\": "src"
+        },
+        "files": ["src/config.php"]
+    },
+    "suggest": {
+        "symfony/yaml": "For loading yaml config files."
+    }
+}
